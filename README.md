@@ -43,7 +43,8 @@ x.serialize()
 #output: '{"__class__": "Example", "__module__": "__main__", "currentStatus": 5, "id": 1346871, "statusDescription": "Pre-Active"}'
 x.serialize(True)
 #output: '{\n    "__class__": "Example",\n    "__module__": "__main__",\n    "currentStatus": 5,\n    "id": 1374606,\n    "statusDescription": "Pre-Active"\n}'
-#formatted:"""
+#formatted:
+"""
 {
     "__class__": "Example",
     "__module__": "__main__",
