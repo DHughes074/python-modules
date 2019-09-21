@@ -4,7 +4,8 @@ import json
 def toJSON(self, pretty = False):
         return json.dumps(self, default=convert_to_dict, sort_keys=True, indent=4 if pretty else None )
 
-def fromJSON(s):
+@classmethod
+def fromJSON(cls, s):
     return json.loads(s, object_hook=convert_from_dict)
 
 def convert_to_dict(obj):
